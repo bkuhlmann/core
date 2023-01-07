@@ -1,0 +1,93 @@
+:toc: macro
+:toclevels: 5
+:figure-caption!:
+
+= Core
+
+Provides a collection of core objects missing from the standard Ruby distribution. This is meant to provide common objects for engineering advanced architctures in order to reduce duplication, improve performance, and improve memory usage.
+
+toc::[]
+
+== Features
+
+* Provides commonly needed core objects.
+
+== Requirements
+
+. link:https://www.ruby-lang.org[Ruby].
+
+== Setup
+
+To set up the project, run:
+
+[source,bash]
+----
+bin/setup
+----
+
+== Usage
+
+The following details what is currently available for use.
+
+=== Constants
+
+The following _empty_ constants are frozen by default and available for use as core objects for use throughout your application.
+
+* `Core::EMPTY_ARRAY`: Provides an empty link:https://rubyapi.org/o/array[Array] instance.
+* `Core::EMPTY_DATA`: Provides an empty link:https://www.alchemists.io/articles/ruby_data[Data] instance.
+* `Core::EMPTY_HASH`: Provides an empty link:https://rubyapi.org/o/hash[Hash] instance.
+* `Core::EMPTY_SET`: Provides an empty link:https://rubyapi.org/o/set[Set] instance.
+* `Core::EMPTY_STRING`: Provides an empty link:https://rubyapi.org/o/string[String] instance.
+
+=== Functions
+
+The following identity function (lambda) is available as a neutral value in link:https://www.alchemists.io/articles/ruby_function_composition[function composition]:
+
+[source,ruby]
+----
+Core::Identity.call "example"  # "example"
+----
+
+== Development
+
+To contribute, run:
+
+[source,bash]
+----
+git clone https://github.com/bkuhlmann/core
+cd core
+bin/setup
+----
+
+You can also use the IRB console for direct access to all objects:
+
+[source,bash]
+----
+bin/console
+----
+
+== Tests
+
+To test, run:
+
+[source,bash]
+----
+bundle exec rake
+----
+
+== link:https://www.alchemists.io/policies/license[License]
+
+== link:https://www.alchemists.io/policies/security[Security]
+
+== link:https://www.alchemists.io/policies/code_of_conduct[Code of Conduct]
+
+== link:https://www.alchemists.io/policies/contributions[Contributions]
+
+== link:https://www.alchemists.io/projects/core/versions[Versions]
+
+== link:https://www.alchemists.io/community[Community]
+
+== Credits
+
+* Built with link:https://www.alchemists.io/projects/gemsmith[Gemsmith].
+* Engineered by link:https://www.alchemists.io/team/brooke_kuhlmann[Brooke Kuhlmann].
