@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "core/identity"
+
 # Main namespace.
 module Core
   EMPTY_ARRAY = [].freeze
