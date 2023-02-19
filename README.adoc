@@ -34,14 +34,14 @@ The following details what is currently available for use.
 The following _empty_ constants are frozen by default and available for use as core objects for use throughout your application.
 
 * `Core::EMPTY_ARRAY`: Provides an empty link:https://rubyapi.org/o/array[Array] instance.
-* `Core::EMPTY_DATA`: Provides an empty link:https://www.alchemists.io/articles/ruby_data[Data] instance.
+* `Core::EMPTY_DATA`: Provides an empty link:https://alchemists.io/articles/ruby_data[Data] instance.
 * `Core::EMPTY_HASH`: Provides an empty link:https://rubyapi.org/o/hash[Hash] instance.
 * `Core::EMPTY_SET`: Provides an empty link:https://rubyapi.org/o/set[Set] instance.
 * `Core::EMPTY_STRING`: Provides an empty link:https://rubyapi.org/o/string[String] instance.
 
 === Functions
 
-The following identity function (lambda) is available as a neutral value in link:https://www.alchemists.io/articles/ruby_function_composition[function composition]:
+The following identity function (lambda) is available as a neutral value in link:https://alchemists.io/articles/ruby_function_composition[function composition]:
 
 [source,ruby]
 ----
@@ -75,19 +75,19 @@ To test, run:
 bin/rake
 ----
 
-== link:https://www.alchemists.io/policies/license[License]
+== link:https://alchemists.io/policies/license[License]
 
-== link:https://www.alchemists.io/policies/security[Security]
+== link:https://alchemists.io/policies/security[Security]
 
-== link:https://www.alchemists.io/policies/code_of_conduct[Code of Conduct]
+== link:https://alchemists.io/policies/code_of_conduct[Code of Conduct]
 
-== link:https://www.alchemists.io/policies/contributions[Contributions]
+== link:https://alchemists.io/policies/contributions[Contributions]
 
-== link:https://www.alchemists.io/projects/core/versions[Versions]
+== link:https://alchemists.io/projects/core/versions[Versions]
 
-== link:https://www.alchemists.io/community[Community]
+== link:https://alchemists.io/community[Community]
 
 == Credits
 
-* Built with link:https://www.alchemists.io/projects/gemsmith[Gemsmith].
-* Engineered by link:https://www.alchemists.io/team/brooke_kuhlmann[Brooke Kuhlmann].
+* Built with link:https://alchemists.io/projects/gemsmith[Gemsmith].
+* Engineered by link:https://alchemists.io/team/brooke_kuhlmann[Brooke Kuhlmann].

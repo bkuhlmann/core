@@ -5,14 +5,14 @@ Gem::Specification.new do |spec|
   spec.version = "0.1.1"
   spec.authors = ["Brooke Kuhlmann"]
   spec.email = ["brooke@alchemists.io"]
-  spec.homepage = "https://www.alchemists.io/projects/core"
+  spec.homepage = "https://alchemists.io/projects/core"
   spec.summary = "A collection of core objects missing from the standard distribution."
   spec.license = "Hippocratic-2.1"
 
   spec.metadata = {
     "bug_tracker_uri" => "https://github.com/bkuhlmann/core/issues",
-    "changelog_uri" => "https://www.alchemists.io/projects/core/versions",
-    "documentation_uri" => "https://www.alchemists.io/projects/core",
+    "changelog_uri" => "https://alchemists.io/projects/core/versions",
+    "documentation_uri" => "https://alchemists.io/projects/core",
     "funding_uri" => "https://github.com/sponsors/bkuhlmann",
     "label" => "Core",
     "rubygems_mfa_required" => "true",
