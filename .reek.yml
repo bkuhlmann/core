@@ -1,3 +1,7 @@
 exclude_paths:
   - tmp
   - vendor
+detectors:
+  IrresponsibleModule:
+    exclude:
+      - "Core::EMPTY_DATA"
