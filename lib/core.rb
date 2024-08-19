@@ -9,4 +9,5 @@ module Core
   EMPTY_HASH = {}.freeze
   EMPTY_SET = Set.new.freeze
   EMPTY_STRING = ""
+  EMPTY_STRUCT = Struct.new.freeze
 end
