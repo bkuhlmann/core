@@ -38,6 +38,7 @@ The following _empty_ constants are frozen by default and available for use as c
 * `Core::EMPTY_HASH`: Provides an empty link:https://rubyapi.org/o/hash[Hash] instance.
 * `Core::EMPTY_SET`: Provides an empty link:https://rubyapi.org/o/set[Set] instance.
 * `Core::EMPTY_STRING`: Provides an empty link:https://rubyapi.org/o/string[String] instance.
+* `Core::EMPTY_STRUCT`: Provides an empty link:https://alchemists.io/articles/ruby_structs[Struct] instance.
 
 === Functions
 
