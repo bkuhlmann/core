@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.metadata = {
     "bug_tracker_uri" => "https://github.com/bkuhlmann/core/issues",
     "changelog_uri" => "https://alchemists.io/projects/core/versions",
-    "documentation_uri" => "https://alchemists.io/projects/core",
+    "homepage_uri" => "https://alchemists.io/projects/core",
     "funding_uri" => "https://github.com/sponsors/bkuhlmann",
     "label" => "Core",
     "rubygems_mfa_required" => "true",
