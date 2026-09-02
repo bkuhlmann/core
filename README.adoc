@@ -2,9 +2,13 @@
 :toclevels: 5
 :figure-caption!:
 
+:ruby_link: link:https://www.ruby-lang.org[Ruby]
+:function_composition_link: link:https://alchemists.io/articles/ruby_function_composition[Function Composition]
+:pipeable_link: link:https://alchemists.io/projects/pipeable[Pipeable]
+
 = Core
 
-Provides a collection of core objects missing from the standard Ruby distribution. This is meant to provide common objects for engineering advanced architctures in order to reduce duplication, improve performance, and improve memory usage.
+Provides a collection of common objects missing from core {ruby_link}. This allows you to reduce duplication, improve performance, and improve memory usage in order to engineer advanced architectures.
 
 toc::[]
 
@@ -14,7 +18,7 @@ toc::[]
 
 == Requirements
 
-. link:https://www.ruby-lang.org[Ruby].
+. {ruby_link}.
 
 == Setup
 
@@ -42,11 +46,50 @@ The following _empty_ constants are frozen by default and available for use as c
 
 === Functions
 
-The following identity function (lambda) is available as a neutral value in link:https://alchemists.io/articles/ruby_function_composition[function composition]:
+The following identity function (lambda) is available as a neutral value in {function_composition_link}:
 
 [source,ruby]
 ----
 Core::Identity.call "example"  # "example"
+----
+
+=== Modules
+
+A `Composable` module is available to you should you need to use {function_composition_link} in order to make your objects composable via procs, lambdas, methods, and/or classes. Pairs well with the {pipeable_link} gem. The module provides the following methods for you:
+
+* `+>>+`: Forward composition.
+* `+<<+`: Backward composition.
+* `+#call+`: The primary method to implement in order to be composable. Fails with a `NoMethodError` if not implemented.
+
+To use, include `Composable` and implement `#call` as follows:
+
+[source,ruby]
+----
+class Greeter
+  include Core::Composable
+
+  def initialize salutation: "Heya"
+    @salutation = salutation
+  end
+
+  def call(text) = "#{salutation} #{text}"
+
+  private
+
+  attr_reader :salutation
+end
+----
+
+The above then allows you to compose your objects as functional pipelines:
+
+[source,ruby]
+----
+appender = -> text { "#{text} -- An example of function composition."}
+greeter = Greeter.new
+
+(greeter >> appender).call "visitor"
+
+# "Heya visitor -- An example of function composition."
 ----
 
 == Development
