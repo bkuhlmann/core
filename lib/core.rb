@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require "core/composable"
 require "core/identity"
 
 # Main namespace.
