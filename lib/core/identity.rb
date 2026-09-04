@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
 module Core
-  Identity = -> input { input }
+  Identity = -> value { value }
              .freeze
 end
