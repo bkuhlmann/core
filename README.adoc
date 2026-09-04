@@ -68,7 +68,7 @@ To use, include `Composable` and implement `#call` as follows:
 class Greeter
   include Core::Composable
 
-  def initialize salutation: "Heya"
+  def initialize salutation = "Hi"
     @salutation = salutation
   end
 
@@ -84,12 +84,12 @@ The above then allows you to compose your objects as functional pipelines:
 
 [source,ruby]
 ----
-appender = -> text { "#{text} -- An example of function composition."}
+appender = -> text { "#{text} -- An example of function composition." }
 greeter = Greeter.new
 
 (greeter >> appender).call "visitor"
 
-# "Heya visitor -- An example of function composition."
+# "Hi visitor -- An example of function composition."
 ----
 
 == Development
